@@ -81,18 +81,23 @@
 @-webkit-keyframes fillheart {
   0% {
     opacity: 0;
+
   }
   100% {
     opacity: 1;
+
   }
 }
 
 @keyframes fillheart {
   0% {
     opacity: 0;
+    stroke-width: 20;
+
   }
   100% {
     opacity: 1;
+    stroke-width: 0;
   }
 }
 
@@ -386,7 +391,6 @@ footer li a {
   right: 31px;
   width: 32px;
   fill: transparent;
-  stroke-width: 35;
   stroke: black;
 }
 
@@ -924,8 +928,9 @@ input::placeholder {
 
 .restaurant .restaurant__card .icon.heart-fill path:hover {
   -webkit-animation: fillheart 1s ease-in-out;
-          animation: fillheart 1s ease-in-out;
-          stroke-width: 0;
+  animation: fillheart 1s ease-in-out;
+  stroke-width: 0;
+
   fill: url(#heart_degrade);
 }
 
@@ -934,9 +939,8 @@ input::placeholder {
   position: relative;
   right: 31px;
   width: 32px;
-  fill: transparent;
-  stroke-width: 35;
   stroke: black;
+  stroke-width: 35;
 }
 
 .btn {
