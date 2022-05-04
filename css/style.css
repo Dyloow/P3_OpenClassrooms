@@ -116,18 +116,20 @@
   }
 }
 
-
 bodY {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 .center {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 0;
+
+
 }
+
 .wave {
   width: 5px;
   height: 100px;
@@ -138,47 +140,59 @@ bodY {
 }
 .wave span::after {
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(1) {
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(2) {
   animation-delay: 0.1s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(3) {
   animation-delay: 0.2s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(4) {
   animation-delay: 0.3s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(5) {
   animation-delay: 0.4s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(6) {
   animation-delay: 0.5s;
   opacity: 0;
+  scale: 0;
   
 }
 .wave:nth-child(7) {
   animation-delay: 0.6s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(8) {
   animation-delay: 0.7s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(9) {
   animation-delay: 0.8s;
   opacity: 0;
+  scale: 0;
 }
 .wave:nth-child(10) {
   animation-delay: 0.9s;
   opacity: 0;
+    scale: 0;
 }
+
 /*#################################*\
 ####          Media querys       ####
 ####                     #### 
@@ -246,8 +260,8 @@ header {
   text-align: center;
   font-size: 3rem;
   padding-top: 5px;
-  -webkit-animation: opacitystartlogo 4s ease-in-out;
-  animation: opacitystartlogo 4s ease-in-out;
+  -webkit-animation: opacitystartlogo 6s ease-in-out;
+  animation: opacitystartlogo 6s ease-in-out;
 }
 
 footer {
@@ -256,8 +270,8 @@ footer {
   height: 200px;
   padding: 30px 0 20px 0;
   line-height: 30px;
-  -webkit-animation: opacitystart 3s;
-  animation: opacitystart 3s;
+  -webkit-animation: opacitystart 6s;
+  animation: opacitystart 6s;
 }
 
 @media (min-width: 768px) {
@@ -283,7 +297,6 @@ footer {
     padding: 30px 0 20px 220px;
   }
 }
-
 footer img {
   width: 120px;
   padding-left: 40px;
@@ -314,7 +327,7 @@ footer li a {
     width: 100%;
     height: 400px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -323,7 +336,7 @@ footer li a {
     width: 100%;
     height: 550px;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
   }
 }
 
@@ -359,11 +372,10 @@ footer li a {
 @media (min-width: 1024px) {
   .place .place__name {
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
-
 .place .place__name .icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -385,7 +397,6 @@ footer li a {
   }
 }
 
-
 .place .place__name .icon.heart-border {
   position: relative;
   right: 31px;
@@ -393,7 +404,6 @@ footer li a {
   fill: transparent;
   stroke: black;
 }
-
 @media (min-width: 1024px) {
   .place .place__name .icon.heart-border {
     right: 71px;
@@ -405,7 +415,6 @@ footer li a {
     right: 81px;
   }
 }
-
 .place .menu {
   Font-family: 'Roboto';
   display: -webkit-box;
@@ -443,6 +452,7 @@ footer li a {
     margin-left: 30%;
   }
 }
+
 
 .place .menu .menu__part::after {
   content: "";
@@ -708,7 +718,7 @@ input::placeholder {
   padding-top: 10px;
 }
 
-.explore h1 {
+.explore h2 {
   font-size: 1.4em;
   padding: 0 60px;
 }
@@ -736,7 +746,6 @@ input::placeholder {
   -webkit-animation: opacitystart 4s;
   animation: opacitystart 4s;
 }
-
 @media (min-width: 768px) {
   .function h1 {
     margin-left: 50px;
@@ -849,16 +858,17 @@ input::placeholder {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 1024px;
   }
 }
+
 
 .restaurant .restaurant__card {
   background-color: white;
