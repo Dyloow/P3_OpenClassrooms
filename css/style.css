@@ -940,13 +940,14 @@ main .restaurant_name .fa-heart {
 .btn:hover {
   opacity: 0.6;
   -webkit-box-shadow: 1px 1px 20px #FF79DA;
-  box-shadow: 1px 1px 20px #FF79DA;
+  box-shadow: 10px 10px 10px 1px #a1a1a1;
 }
 
 .btn-command {
   margin-top: 25px;
   -webkit-animation: opacitystart 3s;
   animation: opacitystart 3s;
+  box-shadow: 5px 5px 10px 1px #a1a1a1;
 }
 
 @media (min-width: 768px) {
