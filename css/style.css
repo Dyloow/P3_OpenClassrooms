@@ -78,28 +78,6 @@
   }
 }
 
-@-webkit-keyframes fillheart {
-  0% {
-    opacity: 0;
-
-  }
-  100% {
-    opacity: 1;
-
-  }
-}
-
-@keyframes fillheart {
-  0% {
-    opacity: 0;
-    stroke-width: 20;
-
-  }
-  100% {
-    opacity: 1;
-    stroke-width: 0;
-  }
-}
 
 @keyframes wave {
   0% {
@@ -397,24 +375,6 @@ footer li a {
   }
 }
 
-.place .place__name .icon.heart-border {
-  position: relative;
-  right: 31px;
-  width: 32px;
-  fill: transparent;
-  stroke: black;
-}
-@media (min-width: 1024px) {
-  .place .place__name .icon.heart-border {
-    right: 71px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .place .place__name .icon.heart-border {
-    right: 81px;
-  }
-}
 .place .menu {
   Font-family: 'Roboto';
   display: -webkit-box;
@@ -930,28 +890,25 @@ input::placeholder {
   justify-content: center;
 }
 
-.restaurant .restaurant__card .icon.heart-fill {
-  width: 30px;
-  z-index: 1;
-  fill: transparent;
+.fa-heart:hover {
+  background: linear-gradient(#9356dc, #ff79da);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: all 0.8s linear;
+  font-weight: 900;
 }
 
-.restaurant .restaurant__card .icon.heart-fill path:hover {
-  -webkit-animation: fillheart 1s ease-in-out;
-  animation: fillheart 1s ease-in-out;
-  stroke-width: 0;
-
-  fill: url(#heart_degrade);
+.fa-heart {
+  font-size: 26px;
+  margin: 16px 30px 0 0;
+}
+main .restaurant_name .fa-heart {
+  font-size: 26px;
+  padding: 0 34px 0 0;
+  
 }
 
-
-.restaurant .restaurant__card .icon.heart-fill{
-  position: relative;
-  right: 31px;
-  width: 32px;
-  stroke: black;
-  stroke-width: 35;
-}
 
 .btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
