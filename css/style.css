@@ -104,8 +104,8 @@ bodY {
   justify-content: center;
   align-items: center;
   height: 0;
-
-
+  
+  
 }
 
 .wave {
@@ -168,7 +168,7 @@ bodY {
 .wave:nth-child(10) {
   animation-delay: 0.9s;
   opacity: 0;
-    scale: 0;
+  scale: 0;
 }
 
 /*#################################*\
@@ -305,7 +305,7 @@ footer li a {
     width: 100%;
     height: 400px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -314,7 +314,7 @@ footer li a {
     width: 100%;
     height: 550px;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
 }
 
@@ -350,8 +350,8 @@ footer li a {
 @media (min-width: 1024px) {
   .place .place__name {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 .place .place__name .icon {
@@ -420,7 +420,7 @@ footer li a {
   background-color: #99E2D0;
   height: 3px;
   width: 40px;
-  margin-top: 3px;
+
 }
 
 .place .menu .menu__items {
@@ -818,13 +818,13 @@ input::placeholder {
     display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     max-width: 1024px;
   }
 }
