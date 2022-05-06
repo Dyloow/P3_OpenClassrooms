@@ -330,7 +330,10 @@ footer li a {
   margin-bottom: -45px;
   border-radius: 40px 40px 0 0;
 }
-
+#découvrez{
+  font-style: italic;
+  
+}
 @media (min-width: 1440px) {
   .place {
     height: 1450px;
@@ -344,7 +347,7 @@ footer li a {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   padding-top: 5%;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 @media (min-width: 1024px) {
